@@ -1,0 +1,22 @@
+
+###
+// GET waterings by plant_id
+GET http://localhost:3000/api/plants/1/waterings
+
+###
+// POST create a new waterings
+POST http://localhost:3000/api/waterings
+Content-Type: application/json
+
+{
+  "plant_id": "3",
+  "date_watered": "2025-06-02",
+  "amount_ml": "20",
+  "notes": "Szépen nő"
+}
+
+###
+// DELETE waterings by id
+DELETE http://localhost:3000/api/waterings/2
+
+###
